@@ -1,0 +1,8 @@
+/*
+	Remove the .example on this json after inserting your credentials to the JSON below.	
+*/
+
+{
+	"api_key": "Insert your API Key",
+	"url": "Insert your MailChimp URL"
+}

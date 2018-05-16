@@ -1,0 +1,8 @@
+{
+	"email_address": "mezmerize_dezz01@yahoo.com",
+	"status_if_new": "subscribed",
+	"merge_fields": {
+		"FNAME": "Edwin",
+		"LNAME": "Melendez"
+	}
+}

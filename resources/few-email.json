@@ -1,0 +1,42 @@
+[
+	{
+		"email_address":"karen02@gmail.com",
+		"status_if_new": "subscribed",
+		"merge_fields": {
+			"FNAME":"Karen",
+			"LNAME":"Buduan"
+		}
+	},
+	{
+		"email_address":"ralph02@gmail.com",
+		"status_if_new": "subscribed",
+		"merge_fields": {
+			"FNAME":"Ralph",
+			"LNAME":"Melendez"
+		}
+	},
+	{
+		"email_address":"jerome02@gmail.com",
+		"status_if_new": "subscribed",
+		"merge_fields": {
+			"FNAME":"Jerome",
+			"LNAME":"Banawa"
+		}
+	},
+	{
+		"email_address":"beverly02@gmail.com",
+		"status_if_new": "subscribed",
+		"merge_fields": {
+			"FNAME":"Beverly",
+			"LNAME":"Banawa"
+		}
+	},
+	{
+		"email_address":"kimberly02@gmail.com",
+		"status_if_new": "subscribed",
+		"merge_fields": {
+			"FNAME":"Kimberly",
+			"LNAME":"Buduan"
+		}
+	}
+]

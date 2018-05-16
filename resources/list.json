@@ -1,0 +1,21 @@
+{
+	"name": "Ematic Task",
+	"contact": {
+		"company": "Melendez Inc.",
+		"address1": "8000 Barracks Highway",
+		"address2": "Bonuan Boquig",
+		"city": "Dagupan City",
+		"state": "Pangasinan",
+		"country": "PH",
+		"phone": "8553-3215",
+		"zip": "2400"
+	},
+	"permission_reminder": "You are receiving this email because this is a task for me.",
+	"campaign_defaults": {
+		"from_name": "Edwin Melendez",
+		"from_email": "melendez.devdesign@gmail.com",
+		"subject": "Ematic Task",
+		"language": "en"
+	},
+	"email_type_option": true
+}
