@@ -1,8 +1,4 @@
-/*
-	Remove the .example on this json after inserting your credentials to the JSON below.	
-*/
-
 {
-	"api_key": "Insert your API Key",
-	"url": "Insert your MailChimp URL"
+	"api_key": "Insert your MailChimp API Key here.",
+	"url": "Insert your MailChimp URL here."
 }
