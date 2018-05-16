@@ -29,13 +29,13 @@ After changing the credentials, remove the .example on the file name.
 
 You can now run the script by executing the command:
 ```
-nodejs app or nodejs app.js
+node app.js
 ```
 
 After executing the command, you are going to answer some prompts and this will how it will look like.
 
 ```
-nodejs app
+node app.js
 prompt: Do you want to load default json data for the List? Y/N:  y
 Yes
 Succesfully created list with an ID#: 6070a8525d
