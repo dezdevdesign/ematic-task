@@ -25,19 +25,19 @@ prompt.get([{
 	message: "Invalid input.",
 	required: true,
 	conform: function(value) {
-		if(value.includes("y")) {
+		if(value.toLowerCase().includes("y")) {
 			return true;
-		}if(value.includes("n")) {
+		}if(value.toLowerCase().includes("n")) {
 			return true;
 		}else {
 			return false;
 		}
 	}
 }], function(err, result) {
-	if(result.answer.includes("y")) {
+	if(result.answer.toLowerCase().includes("y")) {
 		console.log("Yes");
 		createList(listObject);
-	}if(result.answer.includes("n")) {
+	}if(result.answer.toLowerCase().includes("n")) {
 		console.log("No");
 		prompt.start();
 		prompt.get([{
@@ -265,19 +265,19 @@ function promptMyEmail(list_id) {
 		message: "Invalid input.",
 		required: true,
 		conform: function(value) {
-			if(value.includes("y")) {
+			if(value.toLowerCase().includes("y")) {
 				return true;
-			}if(value.includes("n")) {
+			}if(value.toLowerCase().includes("n")) {
 				return true;
 			}else {
 				return false;
 			}
 		}
 	}], function(err, result) {
-		if(result.answer.includes("y")) {
+		if(result.answer.toLowerCase().includes("y")) {
 			console.log("Yes");
 			addMyEmail(list_id, myEmailObject);
-		}if(result.answer.includes("n")) {
+		}if(result.answer.toLowerCase().includes("n")) {
 			console.log("No");
 			prompt.start();
 			prompt.get([{
@@ -363,20 +363,20 @@ function promptFewEmail(list_id) {
 		message: "Invalid input.",
 		required: true,
 		conform: function(value) {
-			if(value.includes("y")) {
+			if(value.toLowerCase().includes("y")) {
 				return true;
-			}if(value.includes("n")) {
+			}if(value.toLowerCase().includes("n")) {
 				return true;
 			}else {
 				return false;
 			}
 		}
 	}], function(err, result) {
-		answer = result.answer;
-		if(result.answer.includes("y")) {
+		answer = result.answer.toLowerCase();
+		if(result.answer.toLowerCase().includes("y")) {
 			console.log("Yes");
 			addFewEmail(list_id, fewEmailObject, answer);
-		}if(result.answer.includes("n")) {
+		}if(result.answer.toLowerCase().includes("n")) {
 			console.log("No");
 			inputFewEmail(list_id, answer)
 		}
@@ -495,19 +495,19 @@ function addFewEmail(list_id, object, answer) {
 				message: "Invalid input.",
 				required: true,
 				conform: function(value) {
-					if(value.includes("y")) {
+					if(value.toLowerCase().includes("y")) {
 						return true;
-					}if(value.includes("n")) {
+					}if(value.toLowerCase().includes("n")) {
 						return true;
 					}else {
 						return false;
 					}
 				}
 			}], function(err, result) {
-				if(result.answer.includes("y")) {
+				if(result.answer.toLowerCase().includes("y")) {
 					console.log("Yes");
 					inputFewEmail(list_id, answer);
-				}if(result.answer.includes("n")) {
+				}if(result.answer.toLowerCase().includes("n")) {
 					console.log("No");
 					createSegment(list_id);
 				}
@@ -568,19 +568,19 @@ function promptCampaign(list_id, segment_id) {
 		message: "Invalid input.",
 		required: true,
 		conform: function(value) {
-			if(value.includes("y")) {
+			if(value.toLowerCase().includes("y")) {
 				return true;
-			}if(value.includes("n")) {
+			}if(value.toLowerCase().includes("n")) {
 				return true;
 			}else {
 				return false;
 			}
 		}
 	}], function(err, result) {
-		if(result.answer.includes("y")) {
+		if(result.answer.toLowerCase().includes("y")) {
 			console.log("Yes");
 			createCampaign(list_id, segment_id, campaignObject);
-		}if(result.answer.includes("n")) {
+		}if(result.answer.toLowerCase().includes("n")) {
 			console.log("No");
 			prompt.start();
 			prompt.get([{
@@ -744,7 +744,7 @@ function checkCampaign(campaign_id) {
 					}d
 				}
 			}], function(err, result) {
-				if(result.answer.includes("y")) {
+				if(result.answer.toLowerCase().includes("y")) {
 					sendCampaign(campaign_id);
 				}
 			});
