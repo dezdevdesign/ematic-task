@@ -248,7 +248,7 @@ function createList(object) {
 	    data: object
 	})
 	.then(function(response) {
-		console.log('Succesfully created list with an ID#: ' + response.data.id);
+		console.log('Successfully created list with an ID#: ' + response.data.id);
 		promptMyEmail(response.data.id);
 	})
 	.catch(function(error) {
@@ -345,7 +345,7 @@ function addMyEmail(list_id, object) {
 	    data: object
 	})
 	.then(function(response) {
-		console.log('Succesfully added your email to the list.');
+		console.log('Successfully added your email to the list.');
 		promptFewEmail(list_id);
 	})
 	.catch(function(error) {
@@ -459,7 +459,7 @@ function addFewEmail(list_id, object, answer) {
 			    }
 			})
 			.then(function(response) {
-				console.log('Succesfully added ' + element.email_address + ' to the list.');
+				console.log('Successfully added ' + element.email_address + ' to the list.');
 			})
 			.catch(function(error) {
 				console.log(error);
@@ -487,7 +487,7 @@ function addFewEmail(list_id, object, answer) {
 		    data: object
 		})
 		.then(function(response) {
-			console.log('Succesfully added ' + object.email_address + ' to the list.');
+			console.log('Successfully added ' + object.email_address + ' to the list.');
 			prompt.start();
 			prompt.get([{
 				name: 'answer',
@@ -551,7 +551,7 @@ function createSegment(list_id) {
 	    }
 	})
 	.then(function(response) {
-		console.log('Succesfully created a new segment with an ID#: ' + response.data.id + ' with a count of ' + response.data.member_count + ' recipient/s');
+		console.log('Successfully created a new segment with an ID#: ' + response.data.id + ' with a count of ' + response.data.member_count + ' recipient/s');
 		promptCampaign(list_id, response.data.id);
 	})
 	.catch(function(error) {
@@ -678,7 +678,7 @@ function createCampaign(list_id, segment_id, object) {
 	    data: object
 	})
 	.then(function(response) {
-		console.log('Succesfully created a new campaign with an ID#: ' + response.data.id);
+		console.log('Successfully created a new campaign with an ID#: ' + response.data.id);
 		updateCampaignContent(response.data.id);
 	})
 	.catch(function(error) {
@@ -708,7 +708,7 @@ function updateCampaignContent(campaign_id) {
 	    }
 	})
 	.then(function(response) {
-		console.log('Succesfully updated campaign contents.');
+		console.log('Successfully updated campaign contents.');
 		checkCampaign(campaign_id);
 	})
 	.catch(function(error) {
@@ -769,7 +769,7 @@ function sendCampaign(campaign_id) {
 		}
 	})
 	.then(function(response) {
-		console.log('Succesfully sent the campaign to all recipients.');
+		console.log('Successfully sent the campaign to all recipients.');
 	})
 	.catch(function(error) {
 		console.log(error);

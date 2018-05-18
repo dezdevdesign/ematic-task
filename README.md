@@ -38,25 +38,25 @@ After executing the command, you are going to answer some prompts and this will 
 node app.js
 prompt: Do you want to load default json data for the List? Y/N:  y
 Yes
-Succesfully created list with an ID#: 6070a8525d
+Successfully created list with an ID#: 6070a8525d
 prompt: Do you want to load default json data for your Email? Y/N:  y
 Yes
-Succesfully added your email to the list.
+Successfully added your email to the list.
 prompt: Do you want to load default json data for other Emails? Y/N:  y
 Yes
-Succesfully added karen02@gmail.com to the list.
-Succesfully added jerome02@gmail.com to the list.
-Succesfully added beverly02@gmail.com to the list.
-Succesfully added ralph02@gmail.com to the list.
-Succesfully added kimberly02@gmail.com to the list.
-Succesfully created a new segment with an ID#: 1203 with a count of 6 recipient/s
+Successfully added karen02@gmail.com to the list.
+Successfully added jerome02@gmail.com to the list.
+Successfully added beverly02@gmail.com to the list.
+Successfully added ralph02@gmail.com to the list.
+Successfully added kimberly02@gmail.com to the list.
+Successfully created a new segment with an ID#: 1203 with a count of 6 recipient/s
 prompt: Do you want to load default json data for the new Campaign? Y/N:  y
 Yes
-Succesfully created a new campaign with an ID#: 3e740fcedb
-Succesfully updated campaign contents.
+Successfully created a new campaign with an ID#: 3e740fcedb
+Successfully updated campaign contents.
 The campaign is ready to be sent. :)
 prompt: Do you want to send Campaign (o_O)? Y/N:  y
-Succesfully sent the campaign to all recipients.
+Successfully sent the campaign to all recipients.
 ```
 
 
